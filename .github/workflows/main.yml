@@ -20,7 +20,7 @@ jobs:
 
     # --- شروع بخش تغییر کرده ---
     -     - name: Setup Tailscale (Manual)
-      run: |
+       run: |
         brew install tailscale
         sudo tailscaled > tailscaled.log 2>&1 &
         sleep 10
