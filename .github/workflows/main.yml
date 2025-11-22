@@ -27,7 +27,7 @@ jobs:
         # تغییرات: اضافه کردن مساوی و کوتیشن برای جلوگیری از ارور آرگومان
         sudo tailscale up --authkey="${{ secrets.TAILSCALE_AUTHKEY }}" --hostname="macos-win11-runner" --accept-routes 
        
-       # --- پایان بخش تغییر کرده ---
+    # --- پایان بخش تغییر کرده ---
     - name: Get Tailscale IP
       run: |
         echo "Getting Tailscale IP..."
