@@ -19,7 +19,7 @@ jobs:
       run: qemu-img create -f qcow2 windows.qcow2 40G
 
     # --- شروع بخش تغییر کرده ---
-        - name: Setup Tailscale (Manual)
+    - name: Setup Tailscale (Manual)
       run: |
         brew install tailscale
         sudo tailscaled > tailscaled.log 2>&1 &
